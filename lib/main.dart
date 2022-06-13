@@ -1,7 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:pokedex_flutter/common/repository/pokemon_repository.dart';
-import 'package:pokedex_flutter/features/pokedex/home/container/home_container.dart';
 import 'package:pokedex_flutter/features/pokedex/pokedex_route.dart';
 
 void main() {
