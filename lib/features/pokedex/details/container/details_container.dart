@@ -9,10 +9,10 @@ import 'package:pokedex_flutter/features/pokedex/details/pages/details_page.dart
 
 class DetailArguments {
   DetailArguments({
-    required this.name,
+    required this.pokemon,
   });
 
-  final String name;
+  final Pokemon pokemon;
 }
 
 class DetailsContainer extends StatelessWidget {
@@ -38,7 +38,7 @@ class DetailsContainer extends StatelessWidget {
           if (snapshot.connectionState == ConnectionState.done &&
               snapshot.hasData) {
             return DetailsPage(
-              name: arguments.name,
+              pokemon: arguments.pokemon,
               pokemons: snapshot.data!,
             );
           }
